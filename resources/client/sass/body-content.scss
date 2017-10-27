@@ -13,7 +13,6 @@
     section#body-header-content {
         clear: both;
         border-bottom: 1px dotted #222;
-        border-radius: 20px;
         @extend .shadowBottom;
         display: block;
         padding-bottom: 10px;
@@ -51,5 +50,19 @@
             span {}
         }
         div#body-project-detail {}
+    }
+    section#body-project-tasks {
+        display: block;
+        margin: 10px 0;
+        div.task-items {
+            background-color: rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            div.item {
+                white-space: nowrap;
+                padding: 20px;
+                cursor: pointer;
+                border-bottom: 1px solid #444;
+            }
+        }
     }
 }
