@@ -1,0 +1,48 @@
+@import 'header';
+@import 'filters';
+@import 'colors';
+$menuLeftWidth:200px;
+$padding:11px;
+$arrowWeight:$padding;
+#menu-left {
+    position: fixed;
+    left: 0;
+    top: $headerheight;
+    width: $menuLeftWidth;
+    bottom: 0;
+    border-right: 1px dashed #555;
+    background-color: $leftMenuBackgroundColor;
+    @extend .shadowRight;
+    ul {
+        li {
+            border-bottom: 1px solid #333;
+            border-top: 1px solid #666;
+            a {
+                display: block;
+                padding: 7px 20px;
+                font-size: 11px;
+                position: relative;
+                &:hover {
+                    background-color: #444;
+                }
+                &.active {
+                    background-color: $activeColor;
+                    color: white;
+                    padding: $arrowWeight 20px;
+                }
+                &.active::after {
+                    content: '';
+                    border: $padding + 6 solid transparent;
+                    border-left-color: $activeColor;
+                    position: absolute;
+                    left: 100%;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 0;
+                    height: 0;
+                }
+            }
+        }
+    }
+}

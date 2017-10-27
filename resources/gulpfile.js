@@ -10,7 +10,7 @@ gulp.task('sass-client', function() {
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('issue-client-min.css'))
         .pipe(cssmin())
-        .pipe(gulp.dest('./bundle'));
+        .pipe(gulp.dest('../app/client/assets/css'));
 });
 
 

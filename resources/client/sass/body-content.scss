@@ -1,0 +1,54 @@
+@import 'menu-left';
+@import 'header';
+@import 'colors';
+@import 'filters';
+#body-content {
+    position: fixed;
+    left: $menuLeftWidth;
+    top: $headerheight;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 40px;
+    section#body-header-content {
+        clear: both;
+        border-bottom: 1px dotted #222;
+        border-radius: 20px;
+        @extend .shadowBottom;
+        display: block;
+        div#body-map-title {
+            white-space: nowrap;
+            a {
+                display: inline-block;
+                padding: 4px;
+                font-size: 11px;
+                i {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $activeColor;
+                    margin-right: 4px;
+                }
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                &:last-child {
+                    color: #fff;
+                    background-color: $activeColor;
+                    padding-right: 10px;
+                    filter: drop-shadow(1px 1px 2px #333);
+                    @extend .lastChild;
+                }
+            }
+        }
+        div#body-project-title {
+            padding: 20px 10px;
+            font-size: 20px;
+            i {}
+            span {}
+        }
+        div#body-project-detail {}
+    }
+}

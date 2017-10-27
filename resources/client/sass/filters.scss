@@ -1,0 +1,22 @@
+@import 'colors';
+.shadowBottom {
+    box-shadow: 0 10px 10px -12px $boxShadowColor;
+}
+
+.shadowRight {
+    box-shadow: 10px 0 10px -12px $boxShadowColor;
+}
+
+.lastChild {
+    position: relative;
+    &::after {
+        content: '';
+        border: 10px solid transparent;
+        border-top-color: $activeColor;
+        width: 0;
+        height: 0;
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+}
