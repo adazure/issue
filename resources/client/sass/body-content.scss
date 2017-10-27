@@ -16,6 +16,7 @@
         border-radius: 20px;
         @extend .shadowBottom;
         display: block;
+        padding-bottom: 10px;
         div#body-map-title {
             white-space: nowrap;
             a {
@@ -44,7 +45,7 @@
             }
         }
         div#body-project-title {
-            padding: 20px 10px;
+            padding: 20px 10px 5px 10px;
             font-size: 20px;
             i {}
             span {}

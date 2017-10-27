@@ -1,0 +1,20 @@
+@import 'colors';
+.btn-details {
+    font-size: 10px;
+    padding: 3px 14px;
+    border-radius: 10px;
+    background-color: $buttonColor;
+    color: $buttonTextColor;
+    display: inline-block;
+    clear: both;
+    margin: 2px;
+    cursor: pointer;
+    span {
+        display: block;
+        text-align: center;
+    }
+    &.note {
+        border-radius: 0;
+        padding: 1px 4px;
+    }
+}

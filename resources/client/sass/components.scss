@@ -1,0 +1,30 @@
+.panel-content {
+    padding: 10px 0;
+    display: none;
+}
+
+ul.list-items {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 12px;
+    margin-bottom: 4px;
+    margin: 0 10px;
+    overflow: hidden;
+    li.item-img {
+        float: left;
+        width: 30px;
+        margin: 0 4px 0 0;
+        img {
+            display: block;
+            width: 30px;
+        }
+    }
+    li.item-name {
+        font-weight: bold;
+        width: 20%;
+        color: #888;
+    }
+    li.item-content {
+        width: 80%;
+    }
+}
